@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Virtual Task Management App</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background: linear-gradient(
+          to right,
+          #1e3c72,
+          #2a5298
+        ); /* Deep blue gradient */
+        color: white;
+        text-align: center;
+        padding: 50px;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: auto;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(10px);
+      }
+
+      h1 {
+        font-weight: 600;
+        font-size: 2.5em;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 1.2em;
+        margin-bottom: 20px;
+      }
+
+      .image-container {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+      }
+
+      img {
+        width: 200px;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 12px 24px;
+        background: #f4a261; /* Warm gold accent */
+        color: #1e3c72;
+        font-size: 1.2em;
+        text-decoration: none;
+        font-weight: 600;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 12px rgba(244, 162, 97, 0.4);
+      }
+
+      .btn:hover {
+        background: #e76f51;
+        transform: scale(1.05);
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to Virtual Task Management App</h1>
+      <p>Organize your Tasks efficiently with ease.</p>
+
+      <div class="image-container">
+        {% load static %}
+        <img src="{% static 'images/virtual-task.png' %}" alt="Virtual Task" />
+      </div>
+
+      <a href="/api/tasks/" class="btn"> Go to Tasks</a>
+    </div>
+  </body>
+</html>
