@@ -21,7 +21,6 @@ from rest_framework import routers
 router= routers.DefaultRouter()
 router.register(r'tasks', views.TodoView,'task')
 
-
 urlpatterns = [
   path("",views.welcome_page, name="welcome"),
     path('admin/', admin.site.urls),
