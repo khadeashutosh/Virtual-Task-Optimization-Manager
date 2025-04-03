@@ -96,11 +96,7 @@ class App extends Component {
     return filteredTasks.map((item) => (
       <li
         key={item.id}
-        className={`flex justify-between items-center p-4 mb-3 rounded-xl border-2 shadow-md text-lg ${
-          item.completed
-            ? "bg-red-200 border-purple-500"
-            : "bg-blue-200 border-blue-500"
-        }`}
+        className="flex justify-between items-center p-4 mb-3 rounded-xl border-2 shadow-md text-lg bg-white"
       >
         <span
           className={`font-semibold ${
@@ -129,7 +125,7 @@ class App extends Component {
 
   render() {
     return (
-      <main className="min-h-screen bg-gradient-to-r from-gray-900 to-gray-700 flex flex-col items-center p-8">
+      <main className="min-h-screen bg-gray-100 flex flex-col items-center p-8">
         <div className="bg-white p-8 rounded-xl shadow-2xl w-full max-w-3xl border-2 border-gray-400">
           <h1 className="text-4xl font-bold text-center mb-6 text-gray-900">
             📝 TASK MANAGER
@@ -145,7 +141,7 @@ class App extends Component {
         </div>
 
         <footer className="mt-6 text-gray-400 text-lg text-center">
-          <span className="text-gray-200 font-semibold">
+          <span className="text-gray-600 font-semibold">
             © 2025 All Rights Reserved
           </span>
         </footer>
