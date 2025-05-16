@@ -13,7 +13,6 @@ class CustomModal extends Component {
   }
 
   componentDidUpdate(prevProps) {
-    // FIX: Update modal form if a new task is selected
     if (prevProps.activeItem !== this.props.activeItem) {
       this.setState({ activeItem: this.props.activeItem });
     }
